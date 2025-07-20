@@ -1,0 +1,119 @@
+.prediction-container {
+  padding: 2rem 4rem;
+  background-color: #f4f6f9;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+}
+
+.prediction-table {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
+  padding: 1rem 1.5rem;
+}
+
+.table-header, .table-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 1rem 0;
+  border-bottom: 1px solid #eee;
+  font-size: 1rem;
+  align-items: center;
+}
+
+.table-header {
+  font-weight: bold;
+  color: #555;
+  background-color: #f8f9fb;
+}
+
+.table-row:last-child {
+  border-bottom: none;
+}
+
+.table-row input {
+  padding: 0.4rem 0.6rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100px;
+}
+
+.predicted {
+  font-weight: bold;
+  color: #2ecc71;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .table-header, .table-row {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    row-gap: 0.5rem;
+  }
+
+  .table-header span:nth-child(3),
+  .table-header span:nth-child(4),
+  .table-row input,
+  .table-row span.predicted {
+    grid-column: span 2;
+  }
+
+  .table-header {
+    font-size: 0.9rem;
+  }
+
+  .table-row {
+    font-size: 0.95rem;
+  }
+
+  .table-row input {
+    width: 100%;
+  }
+}
+.chart-heading {
+  margin-top: 3rem;
+  font-size: 1.4rem;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.chart-wrapper {
+  margin-top: 1rem;
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.top-row select {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: white;
+}
+.selectors {
+  display: flex;
+  gap: 1rem;
+}
+
+.selectors select {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: white;
+}
